@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024년 8월 16일 인교에게</title>
+    <meta property="og:image" content="1/1.png">
+    <meta property="og:title" content="kyo">
+    <meta property="og:description" content="happy birthday to kyo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<style>
+      
+      .envelope {
+
+          width: 400px;
+          height: 300px;
+
+          background-image: url("1/2.png");
+          background-size: cover;
+          background-position: center;
+
+          margin: 200px auto 50px auto;
+          cursor: pointer;
+      }
+
+      .envelope-msg {
+          color: black;
+          text-align: center;
+
+      }
+
+      .letter-close {
+          display: block;
+      }
+
+      .letter-open {
+          display: none;
+      }
+
+      .rtan {
+          background-color: white;
+
+          width: 300px;
+          height: 200px;
+
+          background-image: url("1/1.png");
+          background-size: cover;
+          background-position: center;
+          border-radius: 80px;
+
+          margin: 100px auto 0px auto;
+          border: 5px solid white;
+          box-shadow: 0px 0px 10px 0px white;
+      }
+
+      h1 {
+          font-size: 25;
+          color: black;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-family: "Roboto Mono", monospace;
+      }
+
+      .messagebox {
+          background-color: rgb(255, 255, 255);
+
+          width: 350px;
+          margin: auto;
+
+          color: black;
+
+          padding: 30px;
+
+          font-family: "Noto Sans KR", sans-serif;
+          font-size: 14px;
+          line-height: 24px;
+          box-shadow: 0px 0px 10px 0px white;
+      }
+
+      .from {
+          text-align: right;
+          margin-bottom: 0px;
+      }
+
+      h2 {
+              font-family: "Roboto Mono", monospace;
+          }
+
+
+      @media screen and (max-width: 760px) {
+          .messagebox {
+              width: 300px;
+              padding: 20px;
+          }
+
+          .rtan {
+              width: 150px;
+              height: 150px;
+              margin: 70px auto 0px auto;
+          }
+
+          h1 {
+              font-size: 20px;
+          }
+
+          .envelope {
+              margin: 150px auto 0px auto;
+          }
+      }
+      }
+  </style>
+  <script>
+      function open_letter() {
+          document.getElementsByClassName("letter-close")[0].style.display = 'none'
+          document.getElementsByClassName("letter-open")[0].style.display = 'block'
+      }
+  </script>
+</head>
+
+<body>
+  <div class="letter-close">
+      <div class="envelope" onclick="open_letter()"></div>
+      <h2 class="envelope-msg">Click the crab</h2>
+  </div>
+
+  <div class="letter-open">
+      <div class="rtan" onclick="go_rtan()"></div>
+      <h1>Happy birthday to kyo</h1>
+      <div class="messagebox">
+          2020년 연말이네. <br />
+          올해 이런저런 일이 많았는데 <br />
+          멀리지만 같은 하늘아래 있다는게 <br />
+          힘든시기 큰 힘이 됐어 <br />
+          연말에 다 같이 못 봐서 아쉽다 <br />
+          <p class="from">2021년 건강하자</p>
+      </div>
+  </div>
+
+
+</body>
+
+</html>
